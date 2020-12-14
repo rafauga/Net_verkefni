@@ -45,24 +45,8 @@ bindingoffset=0mm, top=20mm,bottom=20mm}
 %Texti fyrir kennara
 %\end{shownto}
 
-
-
 \linespread{1.2}
-
 \newcommand{\linia}{\rule{\linewidth}{0.5pt}}
-
-% my own titles
-%\makeatletter
-%\renewcommand{\maketitle}{
-%\begin{center}
-%\vspace{2ex}
-%{\huge \textsc{\@title}}
-%\vspace{1ex}
-%\\
-%\linia\\
-%\end{center}
-%}
-%\makeatother
 \renewcommand*\thesection{\arabic{section}}
 \pagestyle{empty}
 
@@ -82,7 +66,7 @@ bindingoffset=0mm, top=20mm,bottom=20mm}
 \title{\Huge Netafræði: verkefnahefti}
 \author{Ingólfur Gíslason}
 \date{Útgáfa 0.95 (\the\year)}
-\titlepic{\includegraphics[width=0.7\textwidth]{konigsb_euler.png}}
+\titlepic{\includegraphics[width=0.7\textwidth]{Myndir/konigsb_euler.png}}
 
 \begin{document}
 \maketitle
@@ -190,7 +174,7 @@ Segjum sem svo að öllum innbyrðis vinatengslum í eftirfarandi fjögurra mann
 \section{Eins net}
 Þegar net eru teiknuð skiptir ekki máli hvernig netið snýr eða nákvæmlega hvar hnútarnir eru, heldur aðeins hvaða hnútar eru tengdir saman með leggjum. Þess vegna geta mismunandi teikningar táknað sama netið. Hvaða teikningar tákna sama netið?
 \begin{figure}[h]
-  \includegraphics[width=0.75\textwidth, center]{einsnet.png}
+  \includegraphics[width=0.75\textwidth, center]{Myndir/einsnet.png}
   \caption*{Hvaða net eru eins í verkefni \thesection{}?}
 \end{figure}
 
@@ -270,7 +254,7 @@ Markmiðið í þessu dæmi er að skoða fullyrðinguna \textbf{„að meðalta
 Í mannfræðirannsókn (Zachary, 1977: \textit{An Information Flow Model for Conflict and Fission in Small Groups}) var búið til líkan af því hvernig upplýsingar og skilaboð streymdu þegar ágreiningur varð og hópar sundruðust innan karateklúbbs í Bandaríkjunum. Í klúbbnum voru 34 einstaklingar og í fræðilegu greininni sem rituð var um rannsóknina birtist net sem sýndi tengslin milli þeirra. Einstaklingar töldust hafa tengsl ef þeir höfðu regluleg samskipti utan klúbbsins.  
 
 \begin{figure}[h]
-  \includegraphics[width=0.75\textwidth, center]{Karateclub.png}
+  \includegraphics[width=0.75\textwidth, center]{Myndir/Karateclub.png}
   \caption*{Tengslanet í karateklúbbnum.}
 \end{figure}
 
@@ -284,7 +268,7 @@ Markmiðið í þessu dæmi er að skoða fullyrðinguna \textbf{„að meðalta
 Í síðasta verkefni var mynd af neti sem erfitt er að lesa af þar sem það er þéttast. Ein hefðbundin leið til þess að setja fram net (og til að „geyma“ upplýsingar um net, til dæmis í tölvum) er að búa til töflu. Taflan telur alla hnúta fylkisins í einum dálki og líka í röð. Ef hnútur númer $n$ tengist hnúti númer $m$ er talan 1 sett í hólfið í dálki $n$ og röð $m$ (og líka í dálki $m$ og röð $n$), en annars er sett 0. 
 
 \begin{figure}[h]
-  \includegraphics[width=0.75\textwidth, center]{Karatetafla.png}
+  \includegraphics[width=0.75\textwidth, center]{Myndir/Karatetafla.png}
   \caption*{Fylkið fyrir tengslanet í karateklúbbnum.}
 \end{figure}
 
@@ -322,7 +306,7 @@ Töflur eins og þessar nefnast \textbf{fylki} í stærðfræði, í netafræði
 Hér er mynd af borg. Fljót rennur gegnum borgina og það eru sjö gamlar og fallegar brýr sem tengja borgarhlutana saman. Verkefnið er að hanna gönguferð þannig að farið sé um hverja brú einu sinni og ekki oftar.  
 
 \begin{figure}[h]
-  \includegraphics[width=0.75\textwidth, center]{koningbryr.jpg}
+  \includegraphics[width=0.75\textwidth, center]{Myndir/koningbryr.jpg}
   \caption*{Gamalt kort af Königsberg.}
 \end{figure}
 
@@ -330,7 +314,7 @@ Hér er mynd af borg. Fljót rennur gegnum borgina og það eru sjö gamlar og f
 Svissneski stærðfræðingurinn Leonhard Euler (1707–1783) leysti þrautina um brýrnar í Königsberg árið 1735. Greinin sem hann skrifaði um þrautina heitir Solutio Problematis ad Geometriam Situs Pertinentis (Lausn á verkefni um rúmfræði staðsetninga). Euler byrjaði á því sem maður á alltaf að gera, bjó til einfaldaða útgáfu af verkefninu, með því að draga út þá eiginleika sem skipta máli, en sleppa hinum. 
 
 \begin{figure}[h]
-  \includegraphics[width=0.75\textwidth, center]{konigsb_euler.png}
+  \includegraphics[width=0.75\textwidth, center]{Myndir/konigsb_euler.png}
    \caption*{Einfölduð teikning Eulers af brúnum í Königsberg.}
 \end{figure}
 
@@ -341,7 +325,7 @@ Reynið að finna gönguferð þannig að farið sé yfir hverja brú nákvæmle
 Til þess að eiga við verkefni eins og hér á undan (og mörg mörg fleiri) er til stærðfræðikenning sem heitir netafræði (e. graph theory). Frumhugtök kenningarinnar eru net (e. graph), leggur (e. edge) og hnútur (e. vertex). \textbf{Net} er safn af \textbf{hnútum} og \textbf{leggjum} þannig að hver leggur tengist nákvæmlega tveimur hnútum. (Einnig er hægt að hugsa sér legg sem tengist aftur í sama hnút.) Annað heiti sem oft er notað þegar (hluti af) netafræði er hagnýtt í ýmsum greinum er network theory eða network science. Svara á þremur spurningum um þrjú net í þessu verkefni.
 
 \begin{figure}[h]
-  \includegraphics[width=0.7\textwidth, center]{fyrstunet.png}
+  \includegraphics[width=0.7\textwidth, center]{Myndir/fyrstunet.png}
   \caption*{Netin fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -382,7 +366,7 @@ Skoðið síðasta dæmi, og \textbf{setjið fram tilgátu} um fjölda oddahnút
 Skoðum aftur eitt af netunum frá því áður:
 
 \begin{figure}[h]
-  \includegraphics[width=0.2\textwidth, center]{einfaltnet.png}
+  \includegraphics[width=0.2\textwidth, center]{Myndir/einfaltnet.png}
   \caption*{Netið fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -396,14 +380,14 @@ Hefur netið hér að ofan Euler-rás? Hvaða? Finnið þær allar (ef einhverja
 Er hægt að teikna eftirfarandi myndir án þess að lyfta blýantinum eða fara ofan í sama strikið tvisvar? Ef það er hægt: hvernig? Eða með tæknilegu orðalagi: er til Euler-vegur í þessum netum?) Það gæti borgað sig að merkja hnútana með tölum eða bókstöfum, til að hægt sé að skrásetja vegina.
 
 \begin{figure}[h]
-  \includegraphics[width=0.5\textwidth, center]{Eulerspurning1.png}
+  \includegraphics[width=0.5\textwidth, center]{Myndir/Eulerspurning1.png}
   \caption*{Netin fyrir verkefni \thesection{}.}
 \end{figure}
 
 \section{Euler-rásir og Euler-vegir í fjórum netum} Svarið spurningunum um hvert og eitt net.
 
 \begin{figure}[h]
-  \includegraphics[width=0.4\textwidth, center]{Eulerspurning2.png}
+  \includegraphics[width=0.4\textwidth, center]{Myndir/Eulerspurning2.png}
   \caption*{Netin fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -429,7 +413,7 @@ Finnið reglu sem segir eitthvað um það hvernig net hafa Euler-veg og hvernig
 Er hægt að teikna eftirfarandi myndir án þess að lyfta blýantinum eða fara ofan í sama strikið tvisvar?
 
 \begin{figure}[h]
-  \includegraphics[width=0.5\textwidth, center]{Eulerspurning3.png}
+  \includegraphics[width=0.5\textwidth, center]{Myndir/Eulerspurning3.png}
   \caption*{Myndir fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -445,14 +429,14 @@ Svissneski stærðfræðingurinn Leonhard Euler (1707–1783) leysti þrautina u
 \label{sec:streymi}
 Á öllum teikningunum hér fyrir neðan táknar B borholu og V táknar vinnslustöð. Leiðslur eru táknaðar með strikum og tölurnar við strikin tákna flutningsgetuna í þúsundum lítra á mínútu. Finna á út hversu mikið af olíu getur (í mesta lagi) streymt frá B til V á mínútu. (Í stað olíu má hugsa sér: hitaveituvatn, gígabæt, eða allt sem getur streymt um einhverskonar farvegi.)
 \begin{figure}[h]
-  \includegraphics[width=0.6\textwidth, center]{Flaedi1.png}
+  \includegraphics[width=0.6\textwidth, center]{Myndir/Flaedi1.png}
   \caption*{Netin fyrir verkefni \thesection{}.}
 \end{figure}
 
 \section{Sannleikurinn um streymi og þversnið}
 Hugtakið \textbf{þversnið} í neti táknar summuna af öllum tölum á leggjunum sem strik sem skiptir netinu í tvennt skarast við. (Þetta er flókin setning sem þarf líklega að lesa aftur.) Á myndinni með þessu verkefni er eitt dæmi um þversnið, sem er jafnt 17. Finnið öll hin þversniðin (allar summurnar). Hvaða þversnið er minnst? 
 \begin{figure}[h]
-  \includegraphics[width=0.4\textwidth, center]{Thversnid.png}
+  \includegraphics[width=0.4\textwidth, center]{Myndir/Thversnid.png}
   \caption*{Net fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -463,7 +447,7 @@ Ef þið hafið unnið þetta og síðasta verkefni vel, hafið þið komist að
 \section{Meira streymi}
 Bandarísku stærðfræðingarnir Ford og Fulkerson sönnuðu regluna um mesta streymi og minnsta þverskurð (e. max-flow min-cut theorem) árið 1956. (Einnig sönnuðu Elias, Feinstein og Shannon regluna sama ár, óháð Ford og Fulkerson). Aðferð þeirra er notuð í framleiðslugreiningu (e. operations research) og er, fyrir utan reikna stremi af öllum gerðum, meðal annars notuð í verkfræðilegri greiningu á verkefnavali (e. project selection problem) og í tölvusjóntækni (þegar tölvuforrit greina myndir). Spurt er um mesta mögulega streymi í kerfinu sem gefið er.
 \begin{figure}[h]
-  \includegraphics[width=0.6\textwidth, center]{Flaedi3.png}
+  \includegraphics[width=0.6\textwidth, center]{Myndir/Flaedi3.png}
   \caption*{Netið fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -583,7 +567,7 @@ Svarið spurningum um netið á eftirfarandi mynd.
 
 \section{Vik, þvermál, grenndir}
 Hér er ímyndað vinatengslanet á samfélagsmiðli (til dæmis Facebook). Við sleppum því að nota nöfn, notum bara bókstafi. 
-\label{sec:streymi}
+\label{sec:vik_grenndir}
 \begin{figure}[h!]
 \centering
 \begin{tikzpicture}
@@ -643,7 +627,7 @@ Hve mörg mismunandi einföld net með þremur hnútum eru til? En með fjórum 
 Hér eru þrjú dæmi um einföld net þar sem einn hnútur (A) getur tengst hinum hnútunum eða ekki. Hnútar í efri röðinni tengjast ekki innbyrðis.
 
 \begin{figure}[h]
-  \includegraphics[width=0.5\textwidth, center]{1-3net.png}
+  \includegraphics[width=0.5\textwidth, center]{Myndir/1-3net.png}
   \caption*{Net fyrir verkefni \thesection{}.}
 \end{figure}
 \begin{enumerate}[(a)]
@@ -709,7 +693,7 @@ Mjög frægt verkefni úr netafræði heitir \textit{The travelling salesman pro
 Á myndinni táknar hver hnútur borg og leggirnir tákna leiðina á milli þeirra og tölurnar tákna kostnað (þúsundir króna) við að fara þann legg. Hugsaðu þér að þú þurfir að koma við í öllum borgunum og enda á sama stað og þú byrjar. Net þar sem hverjum legg er úthlutuð tala (sem getur táknað vegalengd, kostnað, eða eitthvað annað) er nefnt \textbf{vegið net}.
 
 \begin{figure}[h]
-  \includegraphics[width=0.4\textwidth, center]{tsp1.png}
+  \includegraphics[width=0.4\textwidth, center]{Myndir/tsp1.png}
   \caption*{Net fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -732,7 +716,7 @@ Mjög frægt verkefni úr netafræði heitir \textit{The travelling salesman pro
 Leggja þarf lagnir fyrir kalt vatn, vatnsveitu og rafmagnsveitu í þrjú hús.
 
 \begin{figure}[h]
-  \includegraphics[width=0.4\textwidth, center]{Vatnhiti.png}
+  \includegraphics[width=0.4\textwidth, center]{Myndir/Vatnhiti.png}
   \caption*{Verkefni \thesection{}.}
 \end{figure}
 
@@ -744,7 +728,7 @@ Er hægt að gera það án þess að nokkurs staðar þurfi ein lögn að liggj
 
 Hvernig er hægt að teikna eftirfarandi þrjú net þannig að engir leggir skarist? Það má einfaldlega hugsa sér að maður færi hnútana (en passi að leggirnir slitni ekki).
 \begin{figure}[h]
-  \includegraphics[width=0.7\textwidth, center]{3Lagnet.png}
+  \includegraphics[width=0.7\textwidth, center]{Myndir/3Lagnet.png}
   \caption*{Net fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -754,7 +738,7 @@ Hvernig er hægt að teikna eftirfarandi þrjú net þannig að engir leggir ska
 Ef við teiknum lagnet þá skiptir það fletinum (pappírnum, skjánum) í svæði (eins og leggirnir væru girðingar eða landamæri). Hefð er fyrir því að telja svæðið „fyrir utan“ með. Net 1 hér að neðan skiptir fletinum í 4 svæði, en í hve mörg svæði skipta net 2 og 3 fletinum?
 
 \begin{figure}[h]
-  \includegraphics[width=0.6\textwidth, center]{3Svaedi_lagnet.png}
+  \includegraphics[width=0.6\textwidth, center]{Myndir/3Svaedi_lagnet.png}
   \caption*{Lagnet fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -765,7 +749,7 @@ Til er regla sem tengir saman fjölda hnúta, leggja og svæða. Verkefnið er a
 \textbf{Áskorun}: rökstyðjið eða sannið regluna.
 
 \begin{figure}[h]
-  \includegraphics[width=0.6\textwidth, center]{Nokkur_lagnet.png}
+  \includegraphics[width=0.6\textwidth, center]{Myndir/Nokkur_lagnet.png}
   \caption*{Lagnet fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -774,7 +758,7 @@ Til er regla sem tengir saman fjölda hnúta, leggja og svæða. Verkefnið er a
 Reglan um fjölda hnúta, leggja og svæða gildir ekki bara á flötum pappír, heldur líka á kúluyfirborði. Að því gefnu að yfirborð gamaldags fótbolta sé gert úr fimm- og sexhyrningum, sýnið fram á að fjöldi fimmhyrninga er 12 og fjöldi sexhyrninga er 20. Stærð boltans skiptir ekki máli! [Þetta er mjög krefjandi verkefni.]
 
 \begin{figure}[h]
-  \includegraphics[width=0.2\textwidth, center]{bolti.jpg}
+  \includegraphics[width=0.2\textwidth, center]{Myndir/bolti.jpg}
   \caption*{Fótbolti fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -782,7 +766,7 @@ Reglan um fjölda hnúta, leggja og svæða gildir ekki bara á flötum pappír,
 Net er sagt vera Hamilton-net ef hægt er að fara gegnum það þannig að maður komi við í hverjum einasta hnúti nákvæmlega einu sinni og endi á sama stað og maður byrjaði. Eru eftirfarandi net Hamilton-net, annað eða bæði?
 
 \begin{figure}[h]
-  \includegraphics[width=0.5\textwidth, center]{Hamiltonnet1.png}
+  \includegraphics[width=0.5\textwidth, center]{Myndir/Hamiltonnet1.png}
   \caption*{Hamilton-net? (Sjá verkefni \thesection{}).}
   
 \end{figure}
@@ -792,7 +776,7 @@ Net er sagt vera Hamilton-net ef hægt er að fara gegnum það þannig að mað
 Hve marga liti þarf (í minnsta lagi) til að lita þetta landakort þannig að engin lönd með sameiginleg landamæri séu í sama lit?
 
 \begin{figure}[h]
-  \includegraphics[width=0.3\textwidth, center]{litakort.png}
+  \includegraphics[width=0.3\textwidth, center]{Myndir/litakort.png}
   \caption*{Landakort fyrir verkefni \thesection{}.}
 \end{figure}
 
@@ -800,7 +784,7 @@ Hve marga liti þarf (í minnsta lagi) til að lita þetta landakort þannig að
 Hve marga liti þarf til að lita þetta landakort þannig að engin lönd með sameiginleg landamæri séu í sama lit? (Það er í lagi að tvö lönd hafi sama lit ef „landamærin“ eru bara einn punktur.)
 
 \begin{figure}[h]
-  \includegraphics[width=0.5\textwidth, center]{Evropa.png}
+  \includegraphics[width=0.5\textwidth, center]{Myndir/Evropa.png}
   \caption*{Kort af (hluta) af Evrópu, sjá verkefni \thesection{}.}
 \end{figure}
 
@@ -863,7 +847,7 @@ Svo upphafsstaðan eru þrír ótengdir hnútar, og næsta staða gæti verið t
 \end{enumerate}
 
 \begin{figure}[h]
-  \includegraphics[width=0.7\textwidth, center]{Sprouts1.png}
+  \includegraphics[width=0.7\textwidth, center]{Myndir/Sprouts1.png}
   \caption*{Frá upphafsstöðu er hægt að komast í stöðu A eða B (eða aðrar eins), sjá verkefni \thesection{}.}
 \end{figure}
 
@@ -875,7 +859,7 @@ Auk þess eru eftirfarandi reglur:
 \end{enumerate}
 
 \begin{figure}[h]
-  \includegraphics[width=0.3\textwidth, center]{Sprouts2.png}
+  \includegraphics[width=0.3\textwidth, center]{Myndir/Sprouts2.png}
   \caption*{A og B eru „úr leik“}
 \end{figure}
 
@@ -903,7 +887,7 @@ Leikur með þremur hnútum getur mest orðið 8 leikir. (Í hverju skrefi fækk
 \section*{\ref{sec:fyrstanet}}
 Hægt er að \textbf{setja fram} sömu upplýsingar og sömu stærðfræði á marga mismunandi vegu. Hér eru nokkrar \textbf{framsetningar} á þeim aðstæðum sem dæmið fjallar um:
     \begin{figure}[h]
-  \includegraphics[scale=0.5, center]{Fyrstunet.png}
+  \includegraphics[scale=0.5, center]{Myndir/Fyrstunet.png}
   \caption*{Ólíkar framsetningar í verkefni \ref{sec:fyrstanet}}
 \end{figure}
 Skoðið þessar ólíku framsetningar. Hverjar þeirra innihalda allar upplýsingar um aðstæðurnar og hverjar ekki? Hverjar eru gagnlegastar að ykkar mati? Takið eftir að alls staðar er gert ráð fyrir því að það séu engin vinatengsl sem ekki voru talin upp í dæmatextanum (þótt það standi ekki að það geti ekki verið önnur).
